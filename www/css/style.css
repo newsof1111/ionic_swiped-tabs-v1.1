@@ -1,0 +1,47 @@
+/* Empty. Add your own CSS if you like */
+
+.platform-ios.has-translucent-status-bar .app-header-bar {
+    padding-top: 20px;
+}
+
+.platform-android.has-translucent-status-bar .app-header-bar  {
+    padding-top: 25px;
+}
+
+.button  {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.button:link{
+    -webkit-animation: ripple 0.65s linear;
+    animation: ripple 0.65s linear;
+}
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url('Jennifer Lynne Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+.titre{
+font-family:myFirstFont;
+font-size:15px;
+}
+.item-complex .item-content, .item-radio .item-content{
+background-color: #383838;
+color: blanchedalmond;
+}
+.item{
+border-color: #454545;
+}
+.bar.bar-dark .title {
+    color: #f53c3c;
+}

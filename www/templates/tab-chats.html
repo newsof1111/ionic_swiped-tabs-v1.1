@@ -1,0 +1,22 @@
+  <div class="bar bar-header bar-dark" style="height: 80px;">
+  <br></br>
+  <h1 class="title titre" style="line-height: 60px;top: 15px;">stylovitsh</h1>
+</div>
+   <ion-view view-title="Sliding Tabs 1" style="margin-top: 80px;">
+ 
+        <ion-content scroll="false">
+		<button class="button button-light">
+  button-light
+</button>
+		 <ion-slide-box slide-tabs-scrollable="true"  show-pager="false" ion-slide-tabs>
+                <ion-slide ion-slide-tab-label="{{Height}}"><div ng-include src="'templates/chats.html'" style="height: {{Height}}px;"></div></ion-slide>
+                <ion-slide ion-slide-tab-label="another tab"><div ui-view="e"  class="col col-dynamic-40" dynamic-md-layout></div></ion-slide>
+                <ion-slide ion-slide-tab-label="tab3"><h1>Tab 3</h1><button ng-click="nextSlide()" >Next slide!</button></ion-slide>
+                <ion-slide ion-slide-tab-label="another tab again"><h1>Tab 4</h1><button ng-click="nextSlide()">Next slide!</button></ion-slide>
+                <ion-slide ion-slide-tab-label="a very large tab"><h1>Tab 5</h1><button ng-click="nextSlide()">Next slide!</button></ion-slide>
+                <ion-slide ion-slide-tab-label="tab6"><h1>Tab 6</h1><button ng-click="nextSlide()">Next slide!</button></ion-slide>
+            </ion-slide-box>
+        </ion-content>
+    </ion-view>
+ 
+
