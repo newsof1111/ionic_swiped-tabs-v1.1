@@ -31,8 +31,7 @@ var slidingTabsDirective = angular.module("ionic").directive('ionSlideTabs', ['$
 
                     ionicScrollDelegateID = "ion-slide-tabs-handle-" + Math.floor((Math.random() * 10000) + 1);
 					//alert(ionicScrollDelegateID);
-                    tabsBar = angular.element('<ion-scroll delegate-handle="' + ionicScrollDelegateID + '" class="slidingTabs" direction="x" scrollbar-x="false"><ul>' + tabItems + '</ul> <div class="tab-indicator-wrapper"><div class="tab-indicator"></div></div> </ion-scroll>');
-
+                  tabsBar = angular.element('<ion-scroll has-bouncing ="false" overflow-scroll="false" delegate-handle="' + ionicScrollDelegateID + '" class="slidingTabs" direction="x" ><ul>' + tabItems + '</ul> <div class="tab-indicator-wrapper"><div class="tab-indicator"></div></div> </ion-scroll>');
                 }
                 else {
 
